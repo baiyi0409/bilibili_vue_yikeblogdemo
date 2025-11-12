@@ -88,3 +88,28 @@ export const getSurveyData = () => {
     }
   });
 };
+
+//评论
+export const comment = Mock.mock({
+  code:200,
+  data:{
+    count:123,
+    "list|123":[
+      {
+        "id|+1":0,
+        article:{
+          "id|+1":2,
+          "name":"@ctitle(3,12)",
+        },
+        "user":{
+          "id|+1":3,
+          "name":"@ctitle(3,12)",
+          "imgurl":""
+        },
+        "comment":"@cparagraph(1,4)",
+        "moment":"@datetime()",
+        "complaint|0-12":0
+      }
+    ]
+  }
+})
