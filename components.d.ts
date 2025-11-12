@@ -11,18 +11,23 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Datas: typeof import('./src/components/overview/Datas.vue')['default']
     Gather: typeof import('./src/components/overview/Gather.vue')['default']
     HeadBar: typeof import('./src/components/bar/HeadBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconMailOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconMailOutline']
     IconPlusOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconPlusOutline']
+    Line: typeof import('./src/components/echarts/Line.vue')['default']
     Menu: typeof import('./src/components/bar/menu.vue')['default']
     MenuBar: typeof import('./src/components/bar/MenuBar.vue')['default']
+    Pie: typeof import('./src/components/echarts/Pie.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     YkAvatar: typeof import('@yike-design/ui/es')['YkAvatar']
     YkBadge: typeof import('@yike-design/ui/es')['YkBadge']
     YkButton: typeof import('@yike-design/ui/es')['YkButton']
+    YkRadio: typeof import('@yike-design/ui/es')['YkRadio']
+    YkRadioGroup: typeof import('@yike-design/ui/es')['YkRadioGroup']
     YkSpace: typeof import('@yike-design/ui/es')['YkSpace']
     YkText: typeof import('@yike-design/ui/es')['YkText']
     YkTheme: typeof import('@yike-design/ui/es')['YkTheme']
