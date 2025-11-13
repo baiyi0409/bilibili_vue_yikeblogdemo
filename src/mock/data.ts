@@ -99,7 +99,7 @@ export const comment = Mock.mock({
         "id|+1":0,
         article:{
           "id|+1":2,
-          "name":"@ctitle(3,12)",
+          "title":"@ctitle(3,12)",
         },
         "user":{
           "id|+1":3,

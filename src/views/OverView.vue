@@ -4,7 +4,7 @@
         <!-- 计数区 -->
         <Gather/>
 
-        <yk-space style="width: 100%;">
+        <yk-space style="width: 100%;" size="xl">
             <!-- 图表区 -->
             <Datas style="width: 50%;" />
             <!-- 评论区 -->
@@ -20,7 +20,4 @@ import { Comment } from '../components/reply'
 </script>
 
 <style scoped lang="less">
-.report{
-    background-color: aquamarine;
-}
 </style>

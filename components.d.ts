@@ -17,6 +17,7 @@ declare module 'vue' {
     Gather: typeof import('./src/components/overview/Gather.vue')['default']
     HeadBar: typeof import('./src/components/bar/HeadBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    IconDeleteOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconDeleteOutline']
     IconMailOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconMailOutline']
     IconPlusOutline: typeof import('@yike-design/ui/es/components/svg-icon')['IconPlusOutline']
     Information: typeof import('./src/components/reply/Information.vue')['default']
