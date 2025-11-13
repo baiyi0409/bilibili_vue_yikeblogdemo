@@ -10,7 +10,7 @@
         <yk-space align="center" size="xl">
             <!-- 消息 -->
             <yk-badge is-dot>
-                <IconMailOutline style="font-size: 20px;" />
+                <IconMailOutline style="font-size: 20px;" @click="changeActive(true)" />
             </yk-badge>
             <!-- 头像 -->
             <yk-avatar />
@@ -21,15 +21,25 @@
             <!-- 退出按钮 -->
             <yk-button>退出</yk-button>
         </yk-space>
+        <Information :active="active" @close="changeActive(false)" />
     </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
+import { Information } from '../../components/reply';
+import { ref } from 'vue';
+
 const router = useRouter();
 //返回总览
 const backHome = () =>{
     router.push('/overview');
+}
+
+const active = ref<boolean>(false);
+
+const changeActive=(e:boolean)=>{
+    active.value =e
 }
 
 </script>

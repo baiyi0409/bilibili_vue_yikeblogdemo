@@ -9,3 +9,8 @@ export type ReplyProps={
     content:ReplyData;
     isComment:boolean;
 }
+
+export type InformationProps={
+    active:boolean;
+    pageSize:number;
+}

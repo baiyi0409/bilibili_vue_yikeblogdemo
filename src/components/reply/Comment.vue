@@ -19,7 +19,6 @@ import { onMounted, ref , getCurrentInstance} from 'vue';
 import Reply from './reply.vue';
 import { comment } from '../../mock/data';
 import { type CommentProps } from './reply'; 
-import message from '@yike-design/ui/es/components/message/src/utils';
 
 const proxy:any = getCurrentInstance()?.proxy;
 

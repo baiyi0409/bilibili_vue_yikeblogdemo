@@ -1,13 +1,13 @@
 <template>
     <yk-space size="m" class="reply">
-        <yk-avatar img-url="" />
+        <yk-avatar img-url="" v-if="isComment" />
         <yk-space dir="vertical" size="s" class="reply-main">
             <div class="reply-name">
                 <yk-text strong>{{ content?.user.name }}</yk-text>
                 <yk-text type="third" style="font-size: 12px;">{{ content?.moment}}</yk-text>
             </div>
             <yk-text type="secondary">{{ content?.comment }}</yk-text>
-            <yk-space size="s" align="center">
+            <yk-space size="s" align="center" v-if="isComment" >
                 <yk-tag type="primary">{{ content?.article?.title }}</yk-tag>
                 <yk-text type="danger" v-show="content?.complaint! >0">举报 {{ content?.complaint }}</yk-text>
             </yk-space>
@@ -19,7 +19,6 @@
 </template>
 
 <script lang="ts" setup>
-import { EmitFlags } from 'typescript';
 import { type ReplyProps } from './reply';
 
 const props = withDefaults(defineProps<ReplyProps>(),{
